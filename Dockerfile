@@ -26,7 +26,7 @@ COPY entrypoint.sh /scripts/entrypoint.sh
 
 VOLUME ["/scripts/entrypoint.d"]
 
-EXPOSE 25
+EXPOSE 25 465 587
 
 STOPSIGNAL SIGTERM
 
