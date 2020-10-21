@@ -33,4 +33,4 @@ STOPSIGNAL SIGTERM
 
 ENTRYPOINT ["/scripts/entrypoint.sh"]
 
-CMD ["exim", "-bdf", "-v", "-q30m"]
+CMD ["exim", "-bdf", "-v", "-q30m", "-d-all"]
