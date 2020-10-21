@@ -5,6 +5,7 @@ RUN \
 	apk --no-cache upgrade
 
 RUN \
+	apk --no-cache --update add sudo busybox-suid
 	echo "http://dl-cdn.alpinelinux.org/alpine/edge/main" > /etc/apk/repositories && \
 	echo "http://dl-cdn.alpinelinux.org/alpine/edge/community" >> /etc/apk/repositories && \
 	rm -f /var/cache/apk/* && \
