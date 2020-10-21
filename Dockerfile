@@ -10,7 +10,7 @@ RUN \
 	echo "http://dl-cdn.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories && \
 	rm -f /var/cache/apk/* && \
 	apk --no-cache update && \
-	apk --no-cache --update add exim4 && \
+	apk --no-cache --update add exim && \
 	echo "http://dl-cdn.alpinelinux.org/alpine/v$(cat /etc/alpine-release | cut -d'.' -f1,2)/main" > /etc/apk/repositories && \
 	echo "http://dl-cdn.alpinelinux.org/alpine/v$(cat /etc/alpine-release | cut -d'.' -f1,2)/community" >> /etc/apk/repositories && \
 	rm -f /var/cache/apk/* && \
