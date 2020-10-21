@@ -25,6 +25,7 @@ RUN \
 COPY entrypoint.sh /scripts/entrypoint.sh
 
 VOLUME ["/scripts/entrypoint.d"]
+VOLUME ["/var/mail"]
 
 EXPOSE 25 465 587
 
