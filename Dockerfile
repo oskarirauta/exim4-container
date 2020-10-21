@@ -7,7 +7,6 @@ RUN \
 RUN \
 	echo "http://dl-cdn.alpinelinux.org/alpine/edge/main" > /etc/apk/repositories && \
 	echo "http://dl-cdn.alpinelinux.org/alpine/edge/community" >> /etc/apk/repositories && \
-	echo "http://dl-cdn.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories && \
 	rm -f /var/cache/apk/* && \
 	apk --no-cache update && \
 	apk --no-cache --update add exim && \
