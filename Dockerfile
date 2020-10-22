@@ -31,8 +31,6 @@ EXPOSE 25 465 587
 
 STOPSIGNAL SIGTERM
 
-HEALTHCHECK --interval=55s --timeout=10s --start-period=120s CMD echo -n "" | nc 127.0.0.1 25
-
 ENTRYPOINT ["/scripts/entrypoint.sh"]
 
 CMD ["exim", "-bdf", "-v", "-q30m"]
